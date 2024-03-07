@@ -1,0 +1,68 @@
+.card-section {
+    max-width: 680px;
+    justify-content: space-between;
+    display: flex;
+    border: 1px solid red;
+    padding: 1rem;
+}
+.card-section .card {
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    padding: 0.5rem 1.5rem 4rem 1.5rem;
+    color: rgba(0, 0, 0, 0.863);
+}
+.card-section .card:nth-of-type(1){
+    background-color: rgba(0, 247, 255, 0.1);
+}
+.card-section .card:nth-of-type(2){
+    background-color: rgba(0, 255, 204, 0.1);
+}
+.card-section .card:nth-of-type(3){
+    background-color: rgba(255, 0, 68, 0.1);
+}
+.card-container h1{
+    color:  black;
+}
+.card-container button {
+    width: 120px;
+    background: transparent;
+    border-radius: 20px;
+    padding: 5px 0px;
+}
+.card-container .card:nth-of-type(1) button {
+    color: rgb(0, 195, 202);
+    font-weight: 600;
+    border:2px solid rgb(0, 199, 206);
+}
+.card-container .card:nth-of-type(2) button {
+    color: rgba(0, 255, 204, 1);
+    font-weight: 600;
+    border:2px solid rgba(0, 255, 204, 1);
+}
+.card-container .card:nth-of-type(3) button {
+    color: rgba(255, 0, 68, 1);
+    font-weight: 600;
+    border:2px solid rgba(255, 0, 68, 1);
+}
+@media screen and (max-width: 992px) {
+    .card-section{
+        gap: 20px;
+        /* max-width: 80%; */
+        margin: auto;
+        padding: 0;
+    }
+    .card-container h1{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 600px) {
+    .card-section{
+        flex-direction: column;
+    }
+    .card{
+        margin: auto;
+        width: 100%;
+        max-width: 300px;
+    }
+}
